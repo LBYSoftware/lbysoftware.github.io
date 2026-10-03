@@ -10,8 +10,8 @@
 :root{--ink:#111318;--paper:#f6f1e8;--blue:#1d67ff;--yellow:#ffd84d;--pink:#ff6f91;--green:#72d69b;--muted:#6b6f78;--line:#1b1e24;--shadow:7px 7px 0 var(--line)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;line-height:1.55}
 a{color:inherit}.wrap{width:min(1120px,calc(100% - 34px));margin:auto}.top{padding:18px 0;border-bottom:3px solid var(--line);background:#fff}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;text-decoration:none}.brand-logo{display:block;width:auto;height:58px}.nav a{text-decoration:none;font-weight:800}.navlinks{display:flex;gap:22px}
-.hero{min-height:78vh;display:grid;place-items:center;padding:80px 0}.hero-inner{max-width:900px}.eyebrow{display:inline-block;background:var(--yellow);border:3px solid var(--line);padding:6px 11px;font-weight:900;box-shadow:4px 4px 0 var(--line);transform:rotate(-1deg)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:900;letter-spacing:-1px;text-decoration:none}.brand span{color:var(--blue)}.nav a{text-decoration:none;font-weight:800}.navlinks{display:flex;gap:22px}
+.hero{min-height:78vh;display:grid;place-items:center;padding:80px 0}.hero-inner{max-width:1120px}.hero-layout{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:60px;align-items:center}.hero-copy{min-width:0}.hero-logo{width:100%;max-width:340px;height:auto;display:block}.eyebrow{display:inline-block;background:var(--yellow);border:3px solid var(--line);padding:6px 11px;font-weight:900;box-shadow:4px 4px 0 var(--line);transform:rotate(-1deg)}
 h1{font-family:Arial Black,Arial,sans-serif;font-size:clamp(3.2rem,9vw,7.6rem);line-height:.84;letter-spacing:-.075em;margin:34px 0 25px;text-transform:uppercase}.hero h1 span{color:var(--blue)}
 .lede{font-family:Arial,sans-serif;font-weight:700;font-size:clamp(1.25rem,2.6vw,2rem);max-width:760px;line-height:1.25}.sub{font-size:1rem;max-width:700px;margin-top:25px}.cursor{animation:blink 1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
 .btn{display:inline-block;margin-top:28px;background:var(--ink);color:#fff;text-decoration:none;padding:14px 18px;border:3px solid var(--ink);font-weight:900;box-shadow:6px 6px 0 var(--blue);transition:.15s}.btn:hover{transform:translate(3px,3px);box-shadow:3px 3px 0 var(--blue)}
@@ -23,20 +23,20 @@ h1{font-family:Arial Black,Arial,sans-serif;font-size:clamp(3.2rem,9vw,7.6rem);l
 .contact{background:var(--blue);color:#fff}.contact .btn{background:var(--yellow);color:var(--ink);box-shadow:6px 6px 0 #fff}.contact a.email{font-family:Arial Black,Arial,sans-serif;font-size:clamp(1.15rem,3vw,2rem);word-break:break-word}
 footer{background:var(--ink);color:#fff;padding:35px 0}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center}.tiny{font-size:.78rem;color:#c5c9d2}
 .monkey{position:fixed;right:-180px;bottom:18px;background:var(--yellow);border:3px solid var(--line);padding:12px 16px;font-weight:900;box-shadow:5px 5px 0 var(--line);transition:.45s;z-index:5}.monkey.show{right:18px}
-@media(max-width:760px){.brand-logo{height:48px}.navlinks{display:none}.hero{min-height:auto;padding:70px 0 90px}.grid,.about{grid-template-columns:1fr}.card{min-height:315px}.section{padding:68px 0}.foot{align-items:flex-start;flex-direction:column}h1{font-size:clamp(3.1rem,18vw,5.4rem)}}
+@media(max-width:760px){.navlinks{display:none}.hero{min-height:auto;padding:70px 0 90px}.hero-layout{grid-template-columns:1fr;gap:42px}.hero-logo{width:min(72vw,300px);margin:0 auto}.grid,.about{grid-template-columns:1fr}.card{min-height:315px}.section{padding:68px 0}.foot{align-items:flex-start;flex-direction:column}h1{font-size:clamp(3.1rem,18vw,5.4rem)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cursor{animation:none}.monkey{transition:none}}
 </style>
 </head>
 <body>
-<header class="top"><div class="wrap nav"><a class="brand" href="/" aria-label="Look Behind You Software home"><img class="brand-logo" src="assets/lby-logo.png" alt="Look Behind You Software"></a><nav class="navlinks"><a href="#things">STUFF WE MADE</a><a href="#about">WHY?</a><a href="#contact">SAY HELLO</a></nav></div></header>
+<header class="top"><div class="wrap nav"><a class="brand" href="/">LOOK BEHIND YOU <span>SOFTWARE</span></a><nav class="navlinks"><a href="#things">STUFF WE MADE</a><a href="#about">WHY?</a><a href="#contact">SAY HELLO</a></nav></div></header>
 <main>
-<section class="hero"><div class="wrap hero-inner">
+<section class="hero"><div class="wrap hero-inner"><div class="hero-layout"><div class="hero-copy">
 <div class="eyebrow">INDEPENDENT SOFTWARE, MADE IN SCOTLAND</div>
 <h1>LOOK<br>BEHIND <span>YOU.</span></h1>
 <div class="lede">Digital solutions, made with 💙 in Scotland.</div>
 <p class="sub">Life is full of mildly annoying problems. We like finding them and seeing whether an unreasonable amount of geekery can make them less annoying.<span class="cursor">_</span></p>
 <a class="btn" href="#things">SEE WHAT WE'RE BUILDING ↓</a>
-</div></section>
+</div><div class="hero-mark"><img class="hero-logo" src="assets/lby-logo.png" alt="Look Behind You Software logo"></div></div></div></section>
 
 <section class="section" id="things"><div class="wrap">
 <h2>THINGS WE'VE MADE<br>INSTEAD OF GOING OUTSIDE.</h2>
