@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0d1117">
+<meta name="description" content="Look Behind You Software. Digital solutions, made with love in Scotland. Useful software for everyday problems, with fewer buzzwords and more personality.">
+<title>Look Behind You Software</title>
+<style>
+:root{--ink:#111318;--paper:#f6f1e8;--blue:#1d67ff;--yellow:#ffd84d;--pink:#ff6f91;--green:#72d69b;--muted:#6b6f78;--line:#1b1e24;--shadow:7px 7px 0 var(--line)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;line-height:1.55}
+a{color:inherit}.wrap{width:min(1120px,calc(100% - 34px));margin:auto}.top{padding:18px 0;border-bottom:3px solid var(--line);background:#fff}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:900;letter-spacing:-1px}.brand span{color:var(--blue)}.nav a{text-decoration:none;font-weight:800}.navlinks{display:flex;gap:22px}
+.hero{min-height:78vh;display:grid;place-items:center;padding:80px 0}.hero-inner{max-width:900px}.eyebrow{display:inline-block;background:var(--yellow);border:3px solid var(--line);padding:6px 11px;font-weight:900;box-shadow:4px 4px 0 var(--line);transform:rotate(-1deg)}
+h1{font-family:Arial Black,Arial,sans-serif;font-size:clamp(3.2rem,9vw,7.6rem);line-height:.84;letter-spacing:-.075em;margin:34px 0 25px;text-transform:uppercase}.hero h1 span{color:var(--blue)}
+.lede{font-family:Arial,sans-serif;font-weight:700;font-size:clamp(1.25rem,2.6vw,2rem);max-width:760px;line-height:1.25}.sub{font-size:1rem;max-width:700px;margin-top:25px}.cursor{animation:blink 1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
+.btn{display:inline-block;margin-top:28px;background:var(--ink);color:#fff;text-decoration:none;padding:14px 18px;border:3px solid var(--ink);font-weight:900;box-shadow:6px 6px 0 var(--blue);transition:.15s}.btn:hover{transform:translate(3px,3px);box-shadow:3px 3px 0 var(--blue)}
+.section{padding:88px 0;border-top:3px solid var(--line)}.section h2{font-family:Arial Black,Arial,sans-serif;font-size:clamp(2.3rem,5vw,4.6rem);line-height:.95;letter-spacing:-.055em;margin:0 0 18px}.intro{max-width:760px;font-size:1.1rem;margin-bottom:42px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}.card{position:relative;border:3px solid var(--line);padding:30px;background:#fff;box-shadow:var(--shadow);min-height:340px;display:flex;flex-direction:column;overflow:hidden}.card:nth-child(2){background:#fff7cf}.card:nth-child(3){background:#e9f8ef}.card:nth-child(4){background:#eee8ff}
+.status{align-self:flex-start;border:2px solid var(--line);padding:4px 8px;font-size:.78rem;font-weight:900;background:#fff}.card h3{font-family:Arial Black,Arial,sans-serif;font-size:2rem;letter-spacing:-.04em;margin:24px 0 7px}.motto{font-weight:900;font-size:1.08rem;min-height:54px}.card p{margin:12px 0}.card .go{margin-top:auto;font-weight:900;text-decoration-thickness:3px;text-underline-offset:4px}.icon{position:absolute;right:20px;top:18px;font-size:2.3rem}.secret{cursor:help}
+.about{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:start}.terminal{background:#101319;color:#e9edf5;border:3px solid var(--line);box-shadow:var(--shadow);padding:22px;min-height:260px}.terminal .dots{color:#ff6f91}.terminal .prompt{color:#72d69b}.terminal .blue{color:#77a7ff}
+.callout{font-family:Arial,sans-serif;font-weight:800;font-size:1.35rem}.nope{display:inline-block;text-decoration:line-through;text-decoration-thickness:4px;text-decoration-color:var(--pink)}
+.contact{background:var(--blue);color:#fff}.contact .btn{background:var(--yellow);color:var(--ink);box-shadow:6px 6px 0 #fff}.contact a.email{font-family:Arial Black,Arial,sans-serif;font-size:clamp(1.15rem,3vw,2rem);word-break:break-word}
+footer{background:var(--ink);color:#fff;padding:35px 0}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center}.tiny{font-size:.78rem;color:#c5c9d2}
+.monkey{position:fixed;right:-180px;bottom:18px;background:var(--yellow);border:3px solid var(--line);padding:12px 16px;font-weight:900;box-shadow:5px 5px 0 var(--line);transition:.45s;z-index:5}.monkey.show{right:18px}
+@media(max-width:760px){.navlinks{display:none}.hero{min-height:auto;padding:70px 0 90px}.grid,.about{grid-template-columns:1fr}.card{min-height:315px}.section{padding:68px 0}.foot{align-items:flex-start;flex-direction:column}h1{font-size:clamp(3.1rem,18vw,5.4rem)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cursor{animation:none}.monkey{transition:none}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><div class="brand">LOOK BEHIND YOU <span>SOFTWARE</span></div><nav class="navlinks"><a href="#things">STUFF WE MADE</a><a href="#about">WHY?</a><a href="#contact">SAY HELLO</a></nav></div></header>
+<main>
+<section class="hero"><div class="wrap hero-inner">
+<div class="eyebrow">INDEPENDENT SOFTWARE, MADE IN SCOTLAND</div>
+<h1>LOOK<br>BEHIND <span>YOU.</span></h1>
+<div class="lede">Digital solutions, made with 💙 in Scotland.</div>
+<p class="sub">Life is full of mildly annoying problems. We like finding them and seeing whether an unreasonable amount of geekery can make them less annoying.<span class="cursor">_</span></p>
+<a class="btn" href="#things">SEE WHAT WE'RE BUILDING ↓</a>
+</div></section>
+
+<section class="section" id="things"><div class="wrap">
+<h2>THINGS WE'VE MADE<br>INSTEAD OF GOING OUTSIDE.</h2>
+<p class="intro">No “disrupting paradigms”. No “synergistic ecosystems”. Just software for problems we actually encounter. Although we do have AI. Obviously. It's 2026.</p>
+<div class="grid">
+<article class="card"><div class="icon">⛴️</div><span class="status">● LIVE</span><h3>Western Ferries Checker</h3><div class="motto">Is the Dunoon ferry running? There’s an app for that now.</div><p>Live status, timetables, next departures, alerts and community queue reports. Because “I think it's running” isn't much of a travel plan.</p><span class="go">Built for the Clyde. Tested in Scottish weather. ✓</span></article>
+<article class="card"><div class="icon">🗑️</div><span class="status">● COMING SOON</span><h3>Binfluencer</h3><div class="motto">The only influencer whose content is literally rubbish, and he’s proud of it.</div><p>Collection dates, reminders, recycling guidance and shared households, starring Bincent, our suspiciously enthusiastic wheelie bin.</p><a class="go" href="https://lbysoftware.github.io/binfluencer-public/index.html">MEET BINFLUENCER →</a></article>
+<article class="card"><div class="icon">🦦</div><span class="status">● IN DEVELOPMENT</span><h3>Chotter</h3><div class="motto">Making chores slightly less chore-ish.</div><p>Chores, points, rewards and an otter. Our attempt to reduce the number of times a parent has to say “have you done it yet?” Results may vary depending on child.</p><span class="go">COMING WHEN THE OTTER SAYS IT'S READY.</span></article>
+<article class="card secret" id="guybrush"><div class="icon">🏴‍☠️</div><span class="status">● UPCOMING</span><h3>Guybrush</h3><div class="motto">Behind every good captain is a questionable crew.</div><p>We're not ready to talk about this one yet.</p><span class="go">[ CLASSIFIED-ish ]</span></article>
+</div></div></section>
+
+<section class="section" id="about"><div class="wrap about">
+<div><h2>OH. HELLO THERE.</h2><p class="callout">We're Look Behind You Software, an independent Scottish startup with a fairly straightforward philosophy: notice annoying things, then build something about them.</p><p>Some ideas might become big. Some might help fifty people. If fifty people's lives are slightly less annoying because of something we made, that's still pretty cool.</p><p>We grew up waiting for games to load from cassette tapes, asking Jeeves things, burning questionable mix CDs and being told not to believe everything we read on the internet.</p><p>Look how that last one turned out.</p></div>
+<div class="terminal"><div class="dots">● ● ●</div><br><span class="prompt">ste@lbysoftware:~$</span> mission<br><span class="blue">→ solve everyday problems</span><br><br><span class="prompt">ste@lbysoftware:~$</span> corporate_buzzwords<br>→ <span class="nope">leveraging next-gen synergies</span><br><br><span class="prompt">ste@lbysoftware:~$</span> coffee<br>→ required<br><br><span class="prompt">ste@lbysoftware:~$</span> look_behind_you<br>→ ...</div>
+</div></section>
+
+<section class="section contact" id="contact"><div class="wrap"><h2>GOT AN ANNOYING<br>PROBLEM?</h2><p class="intro">Ever caught yourself saying, “surely someone could make an app for this”? Excellent. Those are basically our favourite words.</p><a class="email" href="mailto:lookbehindyousoftware@gmail.com">lookbehindyousoftware@gmail.com</a><br><a class="btn" href="mailto:lookbehindyousoftware@gmail.com?subject=I%20have%20an%20annoying%20problem">TELL US ABOUT IT →</a></div></section>
+</main>
+<footer><div class="wrap foot"><div><strong>LOOK BEHIND YOU SOFTWARE LTD</strong><div class="tiny">Digital solutions, made with 💙 in Scotland.</div></div><div class="tiny">© 2026 Look Behind You Software Ltd<br>Best viewed with Netscape Navigator at 800×600.*<br>*Please don't actually do that.</div></div></footer>
+<div class="monkey" id="monkey">🐵🐵🐵 A THREE HEADED MONKEY!</div>
+<script>
+const guy=document.getElementById('guybrush'), monkey=document.getElementById('monkey');
+guy.addEventListener('click',()=>{monkey.classList.add('show');setTimeout(()=>monkey.classList.remove('show'),3000)});
+</script>
+</body></html>
