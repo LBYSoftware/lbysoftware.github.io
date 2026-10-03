@@ -1,2 +1,2 @@
-# -lbysoftware.github.io
+# lbysoftware.github.io
 Digital solutions, made with 💙 in Scotland
