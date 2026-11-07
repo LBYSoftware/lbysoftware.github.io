@@ -69,7 +69,7 @@ basic device information when the app connects. We do not use this to identify y
 If you turn on notifications, the app gets a notification token from Expo's push service and sends it to our
 server together with your phone type (Android or iPhone) and the date the app was installed. This lets us send
 you an alert when the ferry service changes to amber or red. The token is not linked to your name, email
-address or any account. Alerts are delivered through Expo's push notification service.
+address or any account. Alerts are delivered through Expo's push notification service and then Apple's or Google's own notification systems.
 </p>
 <p>
 The token is kept until it stops working (for example if you uninstall the app), or until you ask us to
@@ -126,7 +126,8 @@ app. Once you visit a sponsor's website, their own privacy policy applies.
 <ul>
 <li>Google (ads, and hosting of the timetable and sponsor lists).</li>
 <li>Cloudflare (hosting our server, which holds the ferry status, notification tokens and queue reports).</li>
-<li>Expo (delivering notifications).</li>
+<li>Expo (delivering notifications, and delivering app updates to your phone, which means it sees your IP address and basic details such as the app version and whether you use iPhone or Android).</li>
+<li>Apple and Google (app stores, and the notification systems that deliver alerts to your phone).</li>
 </ul>
 <p>
 We do not sell your information. These providers may process data outside the UK, under their own privacy
@@ -163,6 +164,8 @@ If the app changes in a way that affects your privacy, we will update this page 
 Look Behind You Software Ltd, Scotland<br>
 <a href="mailto:hello@lbysoftware.co.uk">hello@lbysoftware.co.uk</a>
 </p>
+
+<p><a href="index.html">&larr; Back to Western Ferries Checker</a></p>
 
 </body>
 </html>
