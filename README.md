@@ -14,8 +14,8 @@ Each app tile on the home page has the same structure, in this order:
 
 1. Status badge
 2. App name
-3. Tagline (up to two lines)
-4. Description (four lines at most; the layout reserves exactly four lines so the links below start at the same height on every tile)
+3. Tagline (two lines, like Western Ferries Checker and Binfluencer)
+4. Description (three lines, like Western Ferries Checker and Binfluencer; the layout reserves a fourth line as breathing space so the links below start at the same height on every tile)
 5. Links, one per line: store links first (Google Play, then App Store, or "iOS coming soon."), then the "Meet ..." or "About ..." page link
 6. Anything extra (for example the council partnership line on Binfluencer) goes after the links
 
